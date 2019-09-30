@@ -12,26 +12,22 @@ export default [
     },
     {
       path: '/',
-      component: '../layouts/SecurityLayout',
+      component: '../layouts/BasicLayout',
+	  Routes: ['src/pages/Authorized'],
+	  authority: ['admin', 'taokexia'],
       routes: [
+	    // dashboard
+		{ path: '/', redirect: '/user/login' },
         {
-          path: '/',
-          component: '../layouts/BasicLayout',
-          authority: ['admin', 'user'],
+          path: '/dashboard',
+		  name: 'dashboard',
+		  icon: 'dashboard',
           routes: [
-            {
-              path: '/',
-              redirect: '/welcome',
-            },
-            {
-              path: '/welcome',
-              name: 'welcome',
-              icon: 'smile',
-              component: './Welcome',
-            },
-            {
-              component: './404',
-            },
+			{
+				path: '/dashboard/workplace',
+				name: 'workplace',
+				component: './dashboard/workplace'
+			}
           ],
         },
         {

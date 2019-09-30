@@ -24,11 +24,10 @@ class Login extends Component {
   };
   handleSubmit = (err, values) => {
     const { type } = this.state;
-
     if (!err) {
       const { dispatch } = this.props;
       dispatch({
-        type: 'login/login',
+        type: 'login/loginAdmin',
         payload: { ...values, type },
       });
     }
@@ -96,25 +95,8 @@ class Login extends Component {
             {status === 'error' &&
               loginType === 'account' &&
               !submitting &&
-              this.renderMessage(
-                formatMessage({
-                  id: 'user-login.login.message-invalid-credentials',
-                }),
-              )}
-            <UserName
-              name="userName"
-              placeholder={`${formatMessage({
-                id: 'user-login.login.userName',
-              })}: admin or user`}
-              rules={[
-                {
-                  required: true,
-                  message: formatMessage({
-                    id: 'user-login.userName.required',
-                  }),
-                },
-              ]}
-            />
+              this.renderMessage('账户或密码错误')}
+            <UserName name="email" placeholder="请输入邮箱" />
             <Password
               name="password"
               placeholder={`${formatMessage({
@@ -137,7 +119,7 @@ class Login extends Component {
               }}
             />
           </Tab>
-          <Tab
+          {/* <Tab
             key="mobile"
             tab={formatMessage({
               id: 'user-login.login.tab-login-mobile',
@@ -193,24 +175,24 @@ class Login extends Component {
                 },
               ]}
             />
-          </Tab>
+          </Tab> */}
           <div>
             <Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>
               <FormattedMessage id="user-login.login.remember-me" />
             </Checkbox>
-            <a
+            {/* <a
               style={{
                 float: 'right',
               }}
               href=""
             >
               <FormattedMessage id="user-login.login.forgot-password" />
-            </a>
+            </a> */}
           </div>
           <Submit loading={submitting}>
             <FormattedMessage id="user-login.login.login" />
           </Submit>
-          <div className={styles.other}>
+          {/* <div className={styles.other}>
             <FormattedMessage id="user-login.login.sign-in-with" />
             <Icon type="alipay-circle" className={styles.icon} theme="outlined" />
             <Icon type="taobao-circle" className={styles.icon} theme="outlined" />
@@ -218,7 +200,7 @@ class Login extends Component {
             <Link className={styles.register} to="/user/register">
               <FormattedMessage id="user-login.login.signup" />
             </Link>
-          </div>
+          </div> */}
         </LoginComponents>
       </div>
     );

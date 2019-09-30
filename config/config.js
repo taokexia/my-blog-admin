@@ -127,11 +127,10 @@ export default {
   },
   chainWebpack: webpackPlugin,
   proxy: {
-    '/api/': {
+    '/api': {
       target: 'http://www.taokexia.xyz:3000/',
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
   },
-  */
 };

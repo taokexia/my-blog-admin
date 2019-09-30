@@ -7,10 +7,7 @@ export default {
   autoHideHeader: false,
   fixSiderbar: false,
   colorWeak: false,
-  menu: {
-    locale: true,
-  },
-  title: 'Ant Design Pro',
+  title: 'Taokexia Blog',
   pwa: false,
   iconfontUrl: '',
 };

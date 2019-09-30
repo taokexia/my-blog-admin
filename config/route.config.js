@@ -30,6 +30,18 @@ export default [
 			}
           ],
         },
+		{
+		  path: '/otherUser',
+		  name: 'otherUser',
+		  icon: 'usergroup-add',
+		  routes: [
+			{
+			  path: '/otherUser/list',
+			  name: 'list',
+			  component: './otheruser/list',
+			},
+		  ],
+		},
         {
           component: './404',
         },

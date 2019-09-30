@@ -48,5 +48,8 @@ export default {
   'menu.editor.mind': '脑图编辑器',
   'menu.editor.koni': '拓扑编辑器',
   'menu.otherUser': '用户管理',
-  'menu.otherUser.list': '用户列表'
+  'menu.otherUser.list': '用户列表',
+  'menu.article': '文章管理',
+  'menu.article.list': '文章列表',
+  'menu.article.create': '文章创作',
 };

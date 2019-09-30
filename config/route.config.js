@@ -30,7 +30,7 @@ export default [
 			}
           ],
         },
-		{
+		{ // 用户管理
 		  path: '/otherUser',
 		  name: 'otherUser',
 		  icon: 'usergroup-add',
@@ -42,6 +42,23 @@ export default [
 			},
 		  ],
 		},
+		{ // 文章管理
+          path: '/article',
+          name: 'article',
+          icon: 'file-markdown',
+          routes: [
+            {
+              path: '/article/list',
+              name: 'list',
+              component: './article/list',
+            },
+            {
+              path: '/article/create',
+              name: 'create',
+              component: './article/articleCreate',
+            },
+          ],
+        },
         {
           component: './404',
         },

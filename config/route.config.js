@@ -83,6 +83,18 @@ export default [
             },
           ],
         },
+		{
+          path: '/link',
+          name: 'link',
+          icon: 'link',
+          routes: [
+            {
+              path: '/link/list',
+              name: 'list',
+              component: './link/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

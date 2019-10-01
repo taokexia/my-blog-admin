@@ -71,6 +71,18 @@ export default [
             },
           ],
         },
+		{
+          path: '/tag',
+          name: 'tag',
+          icon: 'tags',
+          routes: [
+            {
+              path: '/tag/list',
+              name: 'list',
+              component: './tag/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

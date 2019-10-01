@@ -7,13 +7,13 @@ export async function queryTag(params) {
 export async function addTag(params) {
   return request('/api/addTag', {
     method: 'POST',
-    body: params,
+    data: params,
   });
 }
 
 export async function delTag(params) {
   return request('/api/delTag', {
     method: 'POST',
-    body: params,
+    data: params,
   });
 }

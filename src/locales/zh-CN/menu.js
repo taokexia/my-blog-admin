@@ -54,4 +54,6 @@ export default {
   'menu.article.create': '文章创作',
   'menu.message': '留言管理',
   'menu.message.list': '留言列表',
+  'menu.tag': '标签管理',
+  'menu.tag.list': '标签列表'
 };

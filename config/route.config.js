@@ -59,6 +59,18 @@ export default [
             },
           ],
         },
+		{
+          path: '/message',
+          name: 'message',
+          icon: 'message',
+          routes: [
+            {
+              path: '/message/list',
+              name: 'list',
+              component: './message/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

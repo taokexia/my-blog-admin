@@ -52,4 +52,6 @@ export default {
   'menu.article': '文章管理',
   'menu.article.list': '文章列表',
   'menu.article.create': '文章创作',
+  'menu.message': '留言管理',
+  'menu.message.list': '留言列表',
 };

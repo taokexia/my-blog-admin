@@ -57,5 +57,7 @@ export default {
   'menu.tag': '标签管理',
   'menu.tag.list': '标签列表',
   'menu.link': '链接管理',
-  'menu.link.list': '链接列表'
+  'menu.link.list': '链接列表',
+  'menu.category': '分类管理',
+  'menu.category.list': '分类列表'
 };

@@ -95,6 +95,18 @@ export default [
             },
           ],
         },
+		{
+          path: '/category',
+          name: 'category',
+          icon: 'book',
+          routes: [
+            {
+              path: '/category/list',
+              name: 'list',
+              component: './category/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

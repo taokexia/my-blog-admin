@@ -107,6 +107,18 @@ export default [
             },
           ],
         },
+		{ // 时间轴管理
+          path: '/timeAxis',
+          name: 'timeAxis',
+          icon: 'clock-circle',
+          routes: [
+            {
+              path: '/timeAxis/list',
+              name: 'list',
+              component: './timeAxis/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

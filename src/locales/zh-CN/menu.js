@@ -59,5 +59,7 @@ export default {
   'menu.link': '链接管理',
   'menu.link.list': '链接列表',
   'menu.category': '分类管理',
-  'menu.category.list': '分类列表'
+  'menu.category.list': '分类列表',
+  'menu.timeAxis': '时间轴管理',
+  'menu.timeAxis.list': '时间轴列表'
 };

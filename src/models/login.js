@@ -46,7 +46,7 @@ const Model = {
           }
         }
 		console.log('redirect :', redirect);
-        yield put(routerRedux.replace(redirect || '/'));
+        yield put(routerRedux.replace(redirect || '/dashboard/workplace'));
       }
     },
 	*login({ payload }, { call, put }) {
@@ -76,7 +76,7 @@ const Model = {
                 }
             }
             console.log('redirect :', redirect);
-            yield put(routerRedux.replace(redirect || '/'));
+            yield put(routerRedux.replace(redirect || '/dashboard/workplace'));
         }
     },
     *getCaptcha({ payload }, { call }) {

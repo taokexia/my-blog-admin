@@ -26,7 +26,7 @@ export default [
 			{
 				path: '/dashboard/workplace',
 				name: 'workplace',
-				component: './dashboard/workplace'
+				component: './dashboard/workplace.js'
 			}
           ],
         },

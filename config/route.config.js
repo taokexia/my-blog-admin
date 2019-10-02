@@ -131,6 +131,35 @@ export default [
             },
           ],
         },
+		{
+          name: 'exception',
+          icon: 'warning',
+          path: '/exception',
+          routes: [
+            // exception
+            {
+              path: '/exception/403',
+              name: 'not-permission',
+              component: './exception/403',
+            },
+            {
+              path: '/exception/404',
+              name: 'not-find',
+              component: './exception/404',
+            },
+            {
+              path: '/exception/500',
+              name: 'server-error',
+              component: './exception/500',
+            },
+            {
+              path: '/exception/trigger',
+              name: 'trigger',
+              hideInMenu: true,
+              component: './exception/TriggerException',
+            },
+          ],
+        },
         {
           component: './404',
         },

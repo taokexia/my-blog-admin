@@ -63,5 +63,10 @@ export default {
   'menu.timeAxis': '时间轴管理',
   'menu.timeAxis.list': '时间轴列表',
   'menu.project': '项目管理',
-  'menu.project.list': '项目列表'
+  'menu.project.list': '项目列表',
+  'menu.exception': '异常页',
+  'menu.exception.not-permission': '403',
+  'menu.exception.not-find': '404',
+  'menu.exception.server-error': '500',
+  'menu.exception.trigger': '触发错误',
 };

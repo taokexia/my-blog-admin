@@ -119,6 +119,18 @@ export default [
             },
           ],
         },
+		{ // 项目管理
+          path: '/project',
+          name: 'project',
+          icon: 'clock-circle',
+          routes: [
+            {
+              path: '/project/list',
+              name: 'list',
+              component: './project/list',
+            },
+          ],
+        },
         {
           component: './404',
         },

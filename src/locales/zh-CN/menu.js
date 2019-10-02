@@ -61,5 +61,7 @@ export default {
   'menu.category': '分类管理',
   'menu.category.list': '分类列表',
   'menu.timeAxis': '时间轴管理',
-  'menu.timeAxis.list': '时间轴列表'
+  'menu.timeAxis.list': '时间轴列表',
+  'menu.project': '项目管理',
+  'menu.project.list': '项目列表'
 };
